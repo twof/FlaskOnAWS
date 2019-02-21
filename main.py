@@ -18,7 +18,7 @@ def hello():
 def get_todos():
     all_todos = Todo.query.all() 
 
-    print all_todos[0]
+    print(all_todos[0])
     return json.dumps([i.to_json() for i in all_todos])
 
 @app.route("/todo", methods=["POST"])
