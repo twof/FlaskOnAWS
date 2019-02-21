@@ -7,7 +7,7 @@ app = Flask(__name__)
 #app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 #db = SQLAlchemy(app)
 
-from todo import Todo
+#from todo import Todo
 
 @app.route("/")
 def hello():
